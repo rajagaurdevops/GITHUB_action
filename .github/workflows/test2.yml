@@ -1,0 +1,20 @@
+name: Testing Workflows
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  my_second_job:  # Job names should not contain spaces
+    runs-on: ubuntu-latest  # Use a hyphen (-) to specify the OS
+    steps:
+      - name: Run Tests
+        run: |
+          git clone https://github.com/rajagaurdevops/wordpress.git
+          cd wordpress
+          ls
+          echo "error: ${{ secrets.MY_NEW_KEY }}"
