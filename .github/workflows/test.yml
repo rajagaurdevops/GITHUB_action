@@ -17,5 +17,5 @@ jobs:
           git clone https://github.com/rajagaurdevops/linux.git
           cd linux
           ls
-          cd chmod_command
+          cd chmod_chown_chgrp_commands
           cat README.md
