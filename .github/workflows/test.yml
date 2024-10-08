@@ -1,0 +1,21 @@
+name: this is my first workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  my-testing-job:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: my setup step
+        run: |
+          git clone https://github.com/rajagaurdevops/linux.git
+          cd linux
+          ls
+          cd chmod_command
+          cat README.md
