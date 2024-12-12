@@ -1,12 +1,19 @@
+# Name of the GitHub Actions workflow
 name: hello nishant
+
+# Trigger the workflow when a push event occurs
 on: push
 
 jobs:
+  # Define a job named "nishant-job"
   nishant-job:
+    # Specify the runner (Ubuntu) on which the job will execute
     runs-on: ubuntu-latest
     steps:
+      # Step 1: A custom step with multiple commands
       - name: my step
         run: |
-        echo hello nishant
-        echo good morning
+          echo hello nishant
+          
+          echo good morning
 
