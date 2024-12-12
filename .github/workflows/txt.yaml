@@ -4,6 +4,6 @@ on: push
 jobs:
     my-job:
     runs-on: ubuntu-lastest
-      steps:
+    steps:
       -name: my step
-      run: echo hello world
+       run: echo hello world
