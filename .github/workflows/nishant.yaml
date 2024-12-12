@@ -1,0 +1,12 @@
+name: hello nishant
+on: push
+
+jobs:
+  nishant-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my step
+        run: |
+        echo hello nishant
+        echo good morning
+
