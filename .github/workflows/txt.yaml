@@ -2,8 +2,8 @@ name: hello raja
 on: push
 
 jobs:
-    my-job:
-    runs-on: ubuntu-lastest
+  my-job:
+    runs-on: ubuntu-latest
     steps:
-      -name: my step
-       run: echo hello world
+      - name: my step
+        run: echo "hello world"
